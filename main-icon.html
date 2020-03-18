@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div {
+		    width:100%;
+		    height:100%;
+		    display:flex;
+		    position:relative;
+		    margin:0;
+		    top:0;
+		    left:0;
+		    justify-content:center;
+		    align-items:center;
+		    flex-direction:row;
+		    background-image:linear-gradient(to bottom right, #81BEF7 0%, white 100%);
+		    background-size:150%;
+		}
+
+		a {
+		    position:relative;
+		    color: #F5A9F2;
+		    border-radius: 50px;
+		    width: auto;
+		    font-size:600%;
+		    font-weight: bold;
+		    padding: 15px;
+		    margin: 10px;
+		    transition:all .125s ease-in;
+		    text-decoration: none;
+		}
+
+		#start {
+			border: 10px solid white;
+		}
+
+		#end {
+			border: 10px none;
+		}
+
+		a:hover {
+		    color:white;
+		    background-color:#FAFAFA;
+		}
+
+		#start:hover:nth-child(odd) {
+		    border-color: blue;
+		    color: blue;
+		    transform:translateX(5px);
+		}
+
+		#end:hover:nth-child(even) {
+		    border-color: red;
+		    color: red;
+		    transform:translateX(-5px);
+		}
+	</style>
+</head>
+<body>
+	<div>
+	    <a href="#" id="start">출근</a>
+	    <a href="#" id="end">퇴근</a>
+	</div>
+</body>
+</html>
